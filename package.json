@@ -13,7 +13,7 @@
     "genversion": "genversion --es6 --semi src/version.js",
     "lint": "node_modules/.bin/eslint",
     "start": "nodemon --watch src --exec npm run build",
-    "test": "npm run babel && node_modules/.bin/mocha \n"
+    "test": "node_modules/.bin/mocha \n"
   },
   "author": "Christoph Baker <gaoler@electoronicpanopticon.com>",
   "license": "MIT",
