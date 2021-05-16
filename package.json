@@ -1,0 +1,43 @@
+{
+  "name": "ES2020",
+  "version": "0.0.1",
+  "description": "Babel ES2020 Template",
+  "bin": {
+    "random_name_generator": "./cli.js"
+  },
+  "main": "src/main.js",
+  "scripts": {
+    "babel": "babel src --out-dir lib --presets=@babel/preset-env",
+    "build": "npm run genversion && npm run babel",
+    "cli": "./cli.js",
+    "genversion": "genversion --es6 --semi src/version.js",
+    "lint": "node_modules/.bin/eslint",
+    "start": "nodemon --watch src --exec npm run build",
+    "test": "npm run babel && node_modules/.bin/mocha \n"
+  },
+  "author": "Christoph Baker <gaoler@electoronicpanopticon.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "7.13.16",
+    "@babel/core": "7.14.2",
+    "@babel/node": "7.14.2",
+    "@babel/preset-env": "7.14.2",
+    "chai": "4.3.4",
+    "eslint": "7.26.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.23.2",
+    "genversion": "2.3.1",
+    "mocha": "8.4.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.12.1",
+    "commander": "4.1.1",
+    "core-js": "2.6.12",
+    "regenerator-runtime": "0.13.7"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}

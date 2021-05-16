@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["exports","console"],"mappings":"AAAA;;AAEAA,OAAO,CAAPA,EAAAA,GAAa,YAAY;AACvBC,EAAAA,OAAO,CAAPA,GAAAA,CAAAA,KAAAA;AADFD,CAAAA","sourcesContent":["\"use strict\";\n\nexports.go = function () {\n  console.log('Hi!');\n};"],"file":"main.js"}
