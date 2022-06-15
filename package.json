@@ -1,6 +1,6 @@
 {
   "name": "ES2020",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Babel ES2020 Template",
   "bin": {
     "random_name_generator": "./cli.js"
